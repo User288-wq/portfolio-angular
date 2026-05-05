@@ -1,0 +1,16 @@
+<section id="skills-frameworks" class="py-24 bg-[#0f0f0f]">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-extrabold uppercase mb-12">Frameworks & bibliothèques</h2>
+    <div class="space-y-6">
+      <div *ngFor="let fw of frameworks" class="bg-[#1c1c1c] p-4 rounded-lg">
+        <div class="flex justify-between mb-2">
+          <span class="font-medium">{{ fw.name }}</span>
+          <span class="text-gray-400">{{ fw.percent }}%</span>
+        </div>
+        <div class="w-full bg-gray-700 rounded-full h-2">
+          <div class="bg-blue-400 h-2 rounded-full" [style.width.%]="fw.percent"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
